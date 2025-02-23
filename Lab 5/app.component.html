@@ -1,0 +1,15 @@
+
+<ul>
+  <li *ngFor="let category of categories" (click)="selectCategory(category)">
+    {{ category }}
+  </li>
+</ul>
+
+<div *ngIf="selectedCategory">
+  <h2>{{ selectedCategory }}</h2>
+  <app-product-list
+    [products]="products"
+    (like)="handleLike($event)"
+    (remove)="handleRemove($event)"
+  ></app-product-list>
+</div>
