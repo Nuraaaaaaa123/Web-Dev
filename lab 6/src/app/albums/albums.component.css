@@ -1,0 +1,12 @@
+button {
+    background-color: rgb(220, 80, 64);
+    margin-left: 10px;
+}
+
+#add {
+    background-color: lightblue;
+}
+
+li {
+    margin: 10px;
+}
