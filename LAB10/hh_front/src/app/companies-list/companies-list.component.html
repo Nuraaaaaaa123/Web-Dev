@@ -1,0 +1,14 @@
+<!-- <p>sadfghjkl;</p> -->
+
+<div class="main">
+ 
+    <div *ngFor="let company of companies" class="outer">
+        <a [routerLink]="['/companies', company.id]">
+            <p> Company: {{company.name}}</p>
+        </a>
+        <p> Description: {{ company.description }}</p>
+        <p> City: {{ company.city }} </p>
+        <p> Address: {{ company.address }} </p>
+    </div>
+
+</div>
